@@ -27,7 +27,7 @@ const TodoWrapper = (props) => {
         todo, completed: !todo.completed}: todo))
     }
 
-    const deleteTodo= id=>{
+    const deleteTodo= id=>{ 
         alert('Your Plan was deleted Successfully')
         setTodos(todos.filter(todo=> todo.id !== id ))
         
@@ -46,7 +46,7 @@ const TodoWrapper = (props) => {
     return (
       
         <main  className={darkMode ? "dark" : "light"}>
-<p className='logo_text'>Click to Toggle Mode</p>
+<p className='logo_text'>Click to Change Background</p>
 <nav 
            // to slide the button
            className={darkMode ? "dark": "light"}
